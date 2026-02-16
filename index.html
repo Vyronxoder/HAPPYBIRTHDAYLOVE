@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 21st Birthday Myra! 🎂💖</title>
+  <meta name="description" content="A special birthday celebration for the most amazing Myra — turning 21!" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== ENTRANCE OVERLAY ===== -->
+  <div class="entrance-overlay" id="entrance">
+    <div class="envelope" id="openEnvelope">💌</div>
+    <h2>You have a special surprise!</h2>
+    <p>Tap the letter to open 💖</p>
+  </div>
+
+  <!-- ===== FLOATING BACKGROUND BUBBLES ===== -->
+  <div class="floating-bg" id="floatingBg"></div>
+
+  <!-- ===== FLOATING ANIMALS ===== -->
+  <div class="floating-animals" id="floatingAnimals"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="navbar">
+    <a href="#home">🏠 Home</a>
+    <a href="#wishes">💝 Wishes</a>
+    <a href="#letter">💌 Letter</a>
+    <a href="#games">🎮 Games</a>
+    <a href="#cuties">🐾 Cuties</a>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <span class="hero-badge">🎉 It's your special day! 🎉</span>
+    <h1>Happy Birthday</h1>
+    <span class="name">Myra!</span>
+    <p class="subtitle">✨ The world got extra beautiful 21 years ago ✨</p>
+    
+    <div class="age-reveal">
+      <span class="age-number">21</span>
+      <div class="age-text">
+        years of being<br/>absolutely amazing! 🌟
+      </div>
+    </div>
+
+    <div class="hero-animals">
+      <span title="Bunny says HBD!">🐰</span>
+      <span title="Kitty loves you!">🐱</span>
+      <span title="Panda hugs!">🐼</span>
+      <span title="Puppy kisses!">🐶</span>
+      <span title="Bear cuddles!">🧸</span>
+      <span title="Chick cheeps!">🐣</span>
+      <span title="Butterfly wishes!">🦋</span>
+    </div>
+
+    <a href="#wishes" class="cta-btn">Open Your Gifts 🎁</a>
+  </section>
+
+  <!-- ===== WISHES SECTION ===== -->
+  <section class="wishes" id="wishes">
+    <h2 class="section-title">Birthday Wishes 💫</h2>
+    <p class="section-sub">Every card holds a special wish just for you!</p>
+    
+    <div class="wish-cards">
+      <div class="wish-card" onclick="flipWishCard(this)">
+        <span class="emoji">🌸</span>
+        <h3>Happiness</h3>
+        <p>May your 21st year be filled with more joy, laughter, and beautiful moments than you can count! 🥰</p>
+      </div>
+      <div class="wish-card" onclick="flipWishCard(this)">
+        <span class="emoji">🦋</span>
+        <h3>Adventures</h3>
+        <p>May you spread your wings and explore the most magical places. Every step you take makes the world brighter! ✨</p>
+      </div>
+      <div class="wish-card" onclick="flipWishCard(this)">
+        <span class="emoji">🌟</span>
+        <h3>Dreams</h3>
+        <p>May every dream you hold in your heart come true, because you deserve all the magic in the universe! 💫</p>
+      </div>
+      <div class="wish-card" onclick="flipWishCard(this)">
+        <span class="emoji">🐾</span>
+        <h3>Cuddles</h3>
+        <p>May you always be surrounded by warmth, love, and as many cute animal cuddles as your heart desires! 🤗</p>
+      </div>
+      <div class="wish-card" onclick="flipWishCard(this)">
+        <span class="emoji">🌈</span>
+        <h3>Surprises</h3>
+        <p>May life surprise you with the most wonderful unexpected gifts, just like you surprise everyone with your smile! 🎀</p>
+      </div>
+      <div class="wish-card" onclick="flipWishCard(this)">
+        <span class="emoji">💖</span>
+        <h3>Love</h3>
+        <p>May you always know how deeply loved and cherished you are — today, tomorrow, and every single day! 💕</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOVE LETTER ===== -->
+  <section class="love-letter" id="letter">
+    <div class="letter-card">
+      <div class="stamp">💌</div>
+      <h2>A Letter For You 💗</h2>
+      <p>
+        Dear Myra,
+      </p>
+      <p>
+        Happy 21st Birthday to the most incredible person I know! 🎂
+      </p>
+      <p>
+        21 years ago, the stars aligned and brought someone truly magical into this world — you. Your smile lights up every room, your laughter is the sweetest melody, and your heart is the kindest one I've ever known.
+      </p>
+      <p>
+        As you step into this beautiful new chapter, I want you to know that you are loved beyond words, cherished beyond measure, and appreciated more than you'll ever realize.
+      </p>
+      <p>
+        Here's to 21 and all the incredible adventures waiting for you! May every day be as wonderful and special as you are. 🌟
+      </p>
+      <p class="signature">
+        With all my love 💕
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== GAMES SECTION ===== -->
+  <section class="games" id="games">
+    <h2 class="section-title">Fun & Games 🎮</h2>
+    <p class="section-sub">Play some cute games made just for you! 🎈</p>
+
+    <div class="game-tabs">
+      <button class="game-tab active" onclick="switchGame('balloon')">🎈 Balloon Pop</button>
+      <button class="game-tab" onclick="switchGame('catch')">🧁 Cupcake Catch</button>
+      <button class="game-tab" onclick="switchGame('memory')">🐾 Memory Match</button>
+    </div>
+
+    <div class="game-container">
+      <!-- BALLOON POP GAME -->
+      <div class="game-panel active" id="game-balloon">
+        <h3>🎈 Birthday Balloon Pop!</h3>
+        <p class="game-desc">Pop as many balloons as you can in 30 seconds!</p>
+        <div class="game-timer" id="balloonTimer">⏱️ Time: 30s</div>
+        <div class="game-score" id="balloonScore">🎈 Score: 0</div>
+        <div class="balloon-area" id="balloonArea"></div>
+        <button class="balloon-start-btn" id="balloonStartBtn" onclick="startBalloonGame()">Start Popping! 🎉</button>
+      </div>
+
+      <!-- CUPCAKE CATCH GAME -->
+      <div class="game-panel" id="game-catch">
+        <h3>🧁 Cupcake Catch!</h3>
+        <p class="game-desc">Move the basket to catch falling cupcakes! Avoid the veggies 🥦</p>
+        <div class="game-timer" id="catchTimer">⏱️ Time: 30s</div>
+        <div class="game-score" id="catchScore">🧁 Score: 0</div>
+        <div class="catch-area" id="catchArea">
+          <div class="basket" id="basket">🧺</div>
+        </div>
+        <button class="catch-start-btn" id="catchStartBtn" onclick="startCatchGame()">Start Catching! 🧁</button>
+      </div>
+
+      <!-- MEMORY MATCH GAME -->
+      <div class="game-panel" id="game-memory">
+        <h3>🐾 Cute Animal Memory Match!</h3>
+        <p class="game-desc">Find all matching pairs of cute animals!</p>
+        <div class="game-score" id="memoryScore">⭐ Pairs: 0 / 6</div>
+        <div class="memory-grid" id="memoryGrid"></div>
+        <div class="memory-moves" id="memoryMoves">Moves: 0</div>
+        <button class="memory-restart" onclick="initMemoryGame()">🔄 New Game</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CUTE ANIMALS GALLERY ===== -->
+  <section class="gallery" id="cuties">
+    <h2 class="section-title">Cute Animal Friends 🐾</h2>
+    <p class="section-sub">Click on them for a surprise! They all came to wish you happy birthday! 🥳</p>
+    
+    <div class="animal-gallery">
+      <div class="animal-card" onclick="animalSpeak(this, '🐰', 'Happy Birthday Myra! Hop hop hooray! 🥕')">
+        <span class="big-emoji">🐰</span>
+        <h4>Bun Bun</h4>
+        <p>The Birthday Bunny</p>
+      </div>
+      <div class="animal-card" onclick="animalSpeak(this, '🐱', 'Purrr-fect birthday to you Myra! 🐟')">
+        <span class="big-emoji">🐱</span>
+        <h4>Whiskers</h4>
+        <p>The Party Kitty</p>
+      </div>
+      <div class="animal-card" onclick="animalSpeak(this, '🐶', 'Woof! You\'re paw-sitively amazing! 🦴')">
+        <span class="big-emoji">🐶</span>
+        <h4>Cookie</h4>
+        <p>The Celebration Pup</p>
+      </div>
+      <div class="animal-card" onclick="animalSpeak(this, '🐼', 'Panda hugs for your birthday! 🎋')">
+        <span class="big-emoji">🐼</span>
+        <h4>Bamboo</h4>
+        <p>The Cuddly Panda</p>
+      </div>
+      <div class="animal-card" onclick="animalSpeak(this, '🦊', 'What does the fox say? HAPPY BIRTHDAY! 🍂')">
+        <span class="big-emoji">🦊</span>
+        <h4>Maple</h4>
+        <p>The Foxy Friend</p>
+      </div>
+      <div class="animal-card" onclick="animalSpeak(this, '🐧', 'Waddle you do on your birthday? PARTY! 🧊')">
+        <span class="big-emoji">🐧</span>
+        <h4>Tux</h4>
+        <p>The Penguin Pal</p>
+      </div>
+      <div class="animal-card" onclick="animalSpeak(this, '🦄', 'Magical birthday wishes just for you! ✨')">
+        <span class="big-emoji">🦄</span>
+        <h4>Sparkle</h4>
+        <p>The Magic Unicorn</p>
+      </div>
+      <div class="animal-card" onclick="animalSpeak(this, '🐨', 'Koala-ty birthday vibes! 🌿')">
+        <span class="big-emoji">🐨</span>
+        <h4>Fuzzy</h4>
+        <p>The Sleepy Koala</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>Made with love for the most amazing Myra 💖</p>
+    <div class="hearts">💗💖💕💗💖💕</div>
+    <p style="margin-top: 8px; font-size: 0.85rem;">Happy 21st Birthday! 🎂 2026</p>
+  </footer>
+
+  <!-- ===== POPUP ===== -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <div class="popup-emoji" id="popupEmoji">🎉</div>
+      <h2 id="popupTitle">Yay!</h2>
+      <p id="popupText">Something amazing happened!</p>
+      <button class="popup-close" onclick="closePopup()">Okay! 💖</button>
+    </div>
+  </div>
+
+  <!-- ===== MUSIC TOGGLE ===== -->
+  <button class="music-toggle" id="musicToggle" onclick="toggleMusic()" title="Toggle Birthday Music">
+    🎵
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
